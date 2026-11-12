@@ -1,0 +1,31 @@
+navbar {
+  color: #f0f0f0; 
+  font-family: "Caudex", serif;
+}
+.btn-menu {
+  background-color: #eb1809;
+  color: #f0f0f0;
+}
+
+.bg-nosotros {
+  background-color: #ffeedc
+}
+
+.bg-light {
+  background-color: #f0f0f0;
+}
+
+.logo {
+  width: 28px;
+  height: auto;
+}
+
+btn-menu {
+  background-color: #3d2b5a;
+  color: #f0f0f0;
+}
+
+footer {
+  font-style: normal;
+  text-decoration: none;
+}
