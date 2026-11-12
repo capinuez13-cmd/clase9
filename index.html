@@ -1,122 +1,166 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wuni Hotdogs</title>
+    <title>Wüni Hotdogs</title>
+    <meta name="description" content="Wuni: Estilos de Hotdogs">
+
+    <meta name="author" content="Wuni Hotdogs">
     <link rel="icon" href="./favicon.svg" type="image/svg+xml">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox@3.3.1/dist/css/glightbox.min.css">
+    <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
 
 <body>
-    <header id="inicio" class="sticky-top">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <header class="sticky-top" id="inicio">
+        <nav class="navbar navbar-expand-lg bg-black border-bottom" data-bs-theme="dark">
             <div class="container">
-                <a class="navbar-brand" href="#">
-                    <i class="bi bi-cup-hot-fill"></i> Wuni Hotdogs </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <a class="navbar-brand fw-bold" href="#inicio"> <img class="logo" src="favicon.svg"
+                        alt="Logo Wuni Hotdogs"> Wuni Hotdogs</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                    aria-controls="menu" aria-expanded="false" aria-label="Abrir menú">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <div class="collapse navbar-collapse" id="menu">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#menu">Menu</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#promociones">Promociones</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Redes Sociales
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a target="_blank" class="dropdown-item" href="https://www.instagram.com">Instagram</a></li>
-                                <li><a target="_blank" class="dropdown-item" href="https://www.facebook.com">Facebook</a></li>
-                            </ul>
-                        </li>
-
+                        <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#menu-galeria">Menú</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-        <main>
-            <section id="inicio" class="hero py-5">
+
+    <main>
+        <!-- 1ra seccion -->
+        <section class="hero py-4 bg-nosotros" id="nosotros">
+            <div class="container">
+                <div class="row align-items-center g-4">
+                    <div class="col-12 col-lg-6" data-aos="fade-right">
+                        <h1 class="fw-bold titular">Wüni <span style="color: #eb1809"> Hotdogs</span></h1>
+
+                        <p class="portadilla">Hotdogs con estilo</p>
+
+
+                        </p>
+
+                        <p>
+                            Somos una empresa dedicada a la venta de hotdogs con un estilo único y delicioso. Nuestro
+                            objetivo es brindar a nuestros clientes una experiencia culinaria inigualable, combinando
+                            ingredientes frescos y de alta calidad con un toque creativo en cada uno de nuestros
+                            productos.
+                        </p>
+
+                        <a class="btn btn-menu" href="assets/pdf/menu-wuni.pdf" target="_blank">
+                            <i class="bi bi-fork"></i> Descargar menú </a>
+                    </div>
+                            <div class="col-12 col-md-6">
+                            <img src="assets/img/wuni_nosotros.jpg"
+                                class="inicio shadow rounded-circle mx-auto img-fluid" alt="Hotdog">
+                            </img>
+                            </div>
+        </section>
+        <!--2da seccion -->
+        <section class="py-5"  bg-light id="menu-galeria">
+            <div class="container">
+                <h2 class="fw-bold mb-4">Menú</h2>
+                <div class="row g-3">
+                    <div class="col-6 col-md-4">
+                        <a href="./assets/img/foto-1.jpg" class="glightbox" data-gallery="menu" data-title="Fiordo">
+                            <img class="img-fluid" src="./assets/img/foto-1.jpg"
+                                alt="Hot-dogs Hippie - Con pepino, cebolla caramelizada y ajonjolí">
+                        </a>
+
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <a href="./assets/img/foto-2.jpg" class="glightbox" data-gallery="menu" data-title="Fiordo">
+                            <img class="img-fluid" src="./assets/img/foto-2.jpg"
+                                alt="Postre-Éclair de fresas con crema pastelera y chocolate blanco">
+                        </a>
+
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <a href="./assets/img/foto-3.jpg" class="glightbox" data-gallery="menu" data-title="Fiordo">
+                            <img class="img-fluid" src="./assets/img/foto-3.jpg"
+                                alt="Hot-dog Metaler - Bratwurst con papas en gajos">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!--2da seccion -->
+        <section id="servicios" class="py-5">
+            <section class="py-5" id="servicios">
                 <div class="container">
-                    <div class="row align-items-center g-4">
-                        <div class="col-12 col-md-6">
-                            <h1 class="fw-bold titular">Wuni <span style="color: #eb1809"> Hotdogs</span></h1>
-
-                            <p class="portadilla">Hotdogs con estilo</p>
-
-                        
-                            </p>
-
-                            <p>
-                               Somos una empresa dedicada a la venta de hotdogs con un estilo único y delicioso. Nuestro objetivo es brindar a nuestros clientes una experiencia culinaria inigualable, combinando ingredientes frescos y de alta calidad con un toque creativo en cada uno de nuestros productos.
-                            </p>
-
-                            <a class="btn btn-menu" href="#menu">
-                                <i class="bi bi-fork-knife"></i> Ver menú
-                            </a>
+                    <h2 class="fw-bold mb-4">Servicios</h2>
+                    <div class="row g-4">
+                        <div class="col-12 col-md-4">
+                            <article class="card h-100" data-aos="fade-up">
+                                <div class="card-body">
+                                    <h3 class="h5 card-title"><i class="bi bi-truck"></i> Food-truck</h3>
+                                    <p class="card-text mb-0">Conoce nuestros sabores en rueda.</p>
+                                </div>
+                            </article>
                         </div>
-                        <div class="col-12 col-md-6">
-                            <img src="assets/img/hot-dog.jpg"
-                                class="inicio shadow rounded-circle mx-auto" alt="Hotdog">
+                        <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="100">
+                            <article class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h3 class="h5 card-title"><i class="bi bi-geo-alt"></i> Entrega a domicilio</h3>
+                                    <p class="card-text mb-0">A la puerta de tu casa</p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="200">
+                            <article class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h3 class="h5 card-title"><i class="bi bi-basket2"></i> Catering </h3>
+                                    <p class="card-text mb-0">Asistimos a tu evento con deliciosos hot-dogs.</p>
+                                </div>
+                            </article>
                         </div>
                     </div>
                 </div>
             </section>
-            <section id="menu" class="py-5">
-                <div class="container">
-                    <h2 class="fw-bold text-center mb-4">Menú</h2>
-                    <div class="row g-4">
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="card shadow rounded">
-                                <img src="assets/img/hot-dog.jpg" class="card-img-top" alt="Hotdog 1">
-                                <div class="card-body">
-                                    <h5 class="card-title">Hotdog Clásico</h5>
-                                    <p class="card-text">Delicioso hotdog con salchicha, pan fresco y aderezos clásicos.</p>
-                                    <a href="#" class="btn btn-primary">Ordenar</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="card shadow rounded">
-                                <img src="assets/img/hot-dog.jpg" class="card-img-top" alt="Hotdog 2">
-                                <div class="card-body">
-                                    <h5 class="card-title">Hotdog Especial</h5>
-                                    <p class="card-text">Hotdog con ingredientes especiales y salsas gourmet.</p>
-                                    <a href="#" class="btn btn-primary">Ordenar</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Agrega más productos según sea necesario -->
+            </div>
+            </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-dark text-white py-4">
+        <section id="footer" class="py-4">
+            <div class="container">
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <strong>Wüni Hotdogs</strong>
+                        <p class="mb-0 small text-white-50">Hot-dogs con estilo</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="mb-1"><i class="bi bi-geo-alt"></i> Colonia del Perrito #114, Ciudad de México</p>
+                        <p class="mb-0"><i class="bi bi-clock"></i> Martes a domingo, 11:00 a 20:00</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="mb-0"><i class="bi bi-instagram"></i><a href="https://www.instagram.com/wunihotdogs"
+                                target="_blank" style="text-decoration: none; color: inherit;"> _wunihotdogs</a></p>
+                        <p class="mb-0"><i class="bi bi-facebook"></i> <a href="https://www.facebook.com/wunihotdogs"
+                                target="_blank" style="text-decoration: none; color: inherit;">Wüni Hot-dogs</a></p>
+                        <p class="mb-0"><i class="bi bi-whatsapp"></i> <a href="https://wa.me/18137323241"
+                                target="_blank" style="text-decoration: none; color: inherit;">WhatsApp</a></p>
                     </div>
                 </div>
-        </main>
-
-        </div>
-        </div>
-
-
-
-    </header>
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+                <p class="small text-white-50 mt-4 mb-0"><span id="anio"></span> Wüni Hotdogs</p>
+            </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox@3.3.1/dist/js/glightbox.min.js"></script>
+    <script src="./assets/script.js"></script>
 </body>
 
 </html>
